@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/test_db
+    username: postgres
+    password: root
+
+  ##  datasource:
+  ##    url: jdbc:postgresql://localhost:5433/game
+  ##    username: postgres
+  ##    password: 1234
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+management:
+  endpoint:
+    info:
+      enable: true
+
+server:
+  port: 7979
